@@ -1,43 +1,84 @@
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #444343;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
 #chat-container {
-  max-width: 600px;
-  margin: 50px auto;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
+    max-width: 70%;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 #chat-messages {
-  height: 300px;
-  overflow-y: scroll;
-  padding: 10px;
-  background-color: #fff;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 20px;
 }
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.from-user {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.from-bot {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.user-prefix, .bot-prefix {
+    font-weight: bold;
+    margin-right: 10px;
+}
+/* Existing styles remain unchanged */
 
 #user-input {
-  padding: 10px;
-  display: flex;
+    padding: 20px;
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+#input-text {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow-y: hidden; /* Hide vertical scrollbar initially */
+    resize: none; /* Disable textarea resizing by user */
+    
+    /* Diagonal Gradient Background */
+    background: linear-gradient(45deg, #007bff, #4caf50);
+    color: #000000; /* Set text color to white for better visibility */
+    background-clip: text; /* Clip the gradient to the text */
+    -webkit-background-clip: text; /* For Safari/Chrome */
+    font-weight: bold;
 }
 
-#input-text {
-  flex: 1;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
 
 #send-button {
-  padding: 5px 10px;
-  margin-left: 5px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#send-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
