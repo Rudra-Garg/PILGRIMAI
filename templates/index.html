@@ -1,23 +1,23 @@
-
-<!DOCTYPE html> 
-<html> 
-<head> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-    <title>Chatbot Website</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
-    <script src="{{url_for('static', filename='Scripts/script.js')}}"></script>
-
-</head> 
-<body> 
-    <div id="chat-container">
-    <div id="chat-messages"></div>
-    <div id="user-input">
-    <input type="text" id="input-text" placeholder="Type your message...">
-    <button id="btn" onclick="sendData()">Send
-    </button>
-    </div>
-    </div>
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+<title>Chatbot Website</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+<script src="{{url_for('static', filename='Scripts/script.js')}}"></script>
     
-</body> 
-</html> 
+
+</head>
+<body>
+    <div id="chat-container">
+    <div id="chat-messages"><div><strong>You:</strong> hi</div><div><strong>Bot:</strong>  Hello there! How can I support you today?</div></div>
+        <div id="user-input">
+            <textarea id="input-text" placeholder="Type your message..." oninput="autoExpand(this)" onkeydown="handleKeyPress(event)"></textarea>
+            <button id="send-button" onclick="sendData()">Send</button>
+        </div>
+    </div>
+
+
+
+</body></html>
 

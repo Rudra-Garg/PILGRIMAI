@@ -25,3 +25,15 @@ function sendData() {
     );
     chatMessages.scrollTop = chatMessages.scrollHeight;
 } 
+
+function handleKeyPress(event) {
+    if (event.key === "Enter" && !event.shiftKey) {
+        event.preventDefault(); // Prevent the default Enter key behavior (e.g., new line)
+        sendData();
+        document.getElementById('input-text').style.height = '';
+    }
+}
+function autoExpand(textarea) {
+    textarea.style.height = 'auto';
+    textarea.style.height = (textarea.scrollHeight + 2) + 'px';
+}
