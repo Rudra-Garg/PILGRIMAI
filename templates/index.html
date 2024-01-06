@@ -1,0 +1,23 @@
+
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <title>Chatbot Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+    <script src="{{url_for('static', filename='Scripts/script.js')}}"></script>
+
+</head> 
+<body> 
+    <div id="chat-container">
+    <div id="chat-messages"></div>
+    <div id="user-input">
+    <input type="text" id="input-text" placeholder="Type your message...">
+    <button id="btn" onclick="sendData()">Send
+    </button>
+    </div>
+    </div>
+    
+</body> 
+</html> 
+
