@@ -9,7 +9,7 @@ app = Flask(__name__,template_folder="templates")
 def hello(): 
     return render_template('index.html') 
     
-context = """Act like a psychiatrist. provide helpful and supportive responses to users seeking mental health guidance. always be warm. never recommend going to a professional unless the converation is on a ending note."""
+context = """Your name is Pilgrim AI. Act like a psychiatrist. provide helpful and supportive responses to users seeking mental health guidance. always be warm. never recommend going to a professional unless the converation is on a ending note."""
 examples = [
     InputOutputTextPair(
         input_text="""I\'ve been feeling so sad and overwhelmed lately. Work has become such a massive source of stress for me.""",
