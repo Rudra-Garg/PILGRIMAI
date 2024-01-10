@@ -1,23 +1,53 @@
 <!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
-<title>Chatbot Website</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
-<script src="{{url_for('static', filename='Scripts/script.js')}}"></script>
-    
+<html>
 
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Chatbot Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+    <script src="{{url_for('static', filename='Scripts/script.js')}}"></script>
+    
 </head>
+
 <body>
     <div id="chat-container">
-    <div id="chat-messages"><div><strong>You:</strong> hi</div><div><strong>Bot:</strong>  Hello there! How can I support you today?</div></div>
-        <div id="user-input">
-            <textarea id="input-text" placeholder="Type your message..." oninput="autoExpand(this)" onkeydown="handleKeyPress(event)"></textarea>
+        <div id="chat-messages">
+            <!-- <div><strong>Bot:</strong> hi, You can start talking by sending a message here ;)</div> -->
+            <div class="message-wrapper reverse">
+                <img class="message-pp" src="{{url_for('static', filename='/portfolio-1.png')}}" alt="profile-pic">
+                <div class="message-box-wrapper">
+                    <div class="message-box">
+                        esufsfusbfsbfsihsfbsifj s fs sf f dkn jv svisvsu vsdih vsdivshv sv sihv svh sdvs dvhisd k vsidhv
+                        sihv sdvhsd vsd vis vsdihv sdhv sdv hsdv sdv sdvhsd vihsv sihv sdvh sdv hsdv ifushfshfushfjsn
+                        sifhs fuihs ishv nsuv svjs vs vsv sjvb sijvbs viusjb vsui vs vsbi culpa qui officia deserunt
+                        mollit anim id est
+                        laborum.
+                    </div>
+                    <span>You</span>
+                </div>
+            </div>
+            <div class="message-wrapper">
+                <img class="message-pp" src="{{url_for('static', filename='/favicon.ico')}}" alt="profile-pic">
+                <div class="message-box-wrapper">
+                    <div class="message-box">
+                        culpa qui officia deserunt mollit anim id est
+                        laborum.
+                    </div>
+                    <span>Bot</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="user-input" background-image>
+            <textarea id="input-text" placeholder="Type your message..." oninput="autoExpand(this)"
+                onkeydown="handleKeyPress(event)"></textarea>
             <button id="send-button" onclick="sendData()">Send</button>
         </div>
     </div>
 
 
 
-</body></html>
+</body>
 
+</html>
