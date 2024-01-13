@@ -1,4 +1,13 @@
-  <span style="color: green" color="green"> given you have access to project's gcloud console</span>
+
+
+
+  [Click here](pilgrimai.live) to watch it in action.
+
+
+  
+   ```diff
+  + Given you have access to project's gcloud console
+  ```
   
 
 ## Google Cloud App Setup
