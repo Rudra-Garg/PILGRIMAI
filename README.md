@@ -4,7 +4,7 @@
   [Click here](pilgrimai.live) to watch it in action.
 
 
-  
+  # Tutorial
    ```diff
   + You can run it locally, Given you have access to project's gcloud console
   ```
