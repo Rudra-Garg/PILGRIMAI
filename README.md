@@ -1,7 +1,7 @@
 
 
 
-  [Click here](pilgrimai.live) to watch it in action.
+  [Click here](https://pilgrimai.live) to watch it in action.
 
 
   # Tutorial
