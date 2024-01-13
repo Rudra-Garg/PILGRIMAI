@@ -1,5 +1,5 @@
 function generateRandomString(length = 20) {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;:,.<>?';
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     let result = '';
   
     for (let i = 0; i < length; i++) {
@@ -43,7 +43,7 @@ function sendData() {
         $.ajax({
             url: '/process',
             type: 'POST',
-            data: { 'data': userInput },
+            data: { 'data': sessionID+userInput },
             success: function (response) {
                 chatMessages.innerHTML += '<div class="message-wrapper"><img class="message-pp" src="/static/favicon.ico" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box">' + response + '&nbsp;&nbsp;&nbsp;</div><span>Bot</span></div></div>';
                 flag = true;
