@@ -1,19 +1,6 @@
-# Flask App Tutorial
+  <span style="color: green" color="green"> given you have access to project's gcloud console</span>
+  
 
-This tutorial will guide you on how to run a Flask app.
-
-## Prerequisites
-
-Before getting started, make sure you have the following installed on your machine:
-
-- Python (version 3.6 or higher)
-- Flask (install using `pip install flask`)
-- Google Cloud SDK (gcloud) (install using the instructions provided by Google Cloud)
-
-## Warning
-```bash
-this tutorial helps you run it locally , and  is not complete yet, u need to setup gcloud with your google account and project id and have api key for vertex ai, then modify the code to use your api key and project id in main.py, You can google this part.
-```
 ## Google Cloud App Setup
 
 To install and create a default login in Google Cloud (gcloud) app, follow these steps:
