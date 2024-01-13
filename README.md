@@ -6,7 +6,7 @@
 
   
    ```diff
-  + Given you have access to project's gcloud console
+  + You can run it locally, Given you have access to project's gcloud console
   ```
   
 
