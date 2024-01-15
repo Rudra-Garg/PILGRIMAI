@@ -51,9 +51,10 @@ function generateRandomString(length = 20) {
   }
 
   if(getCookie('sessionID')===null){
-    setCookie('sessionID',generateRandomString(),365);
+    setCookie('sessionID',generateRandomString(),30);
   }
   var sessionID = getCookie('sessionID');
+  setCookie('sessionID',sessionID,30);
 
 
 
