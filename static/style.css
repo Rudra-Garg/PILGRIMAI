@@ -554,10 +554,11 @@ body[data-theme=indigo], body[data-theme=pink] {
   display: flex;
   align-items: flex-start;
   padding-bottom: 20px;
+  max-width: 100%;
 }
 .message-wrapper.reverse {
   justify-content: flex-end;
-}
+  }
 .message-wrapper.reverse .message-box {
   background-color: var(--message-box-2);
   color: #fff;
@@ -588,11 +589,12 @@ body[data-theme=indigo], body[data-theme=pink] {
   font-size: 16px;
   line-height: 16px;
   width: auto;
-  max-width: 80%;
+  max-width: 100%;
   color: var(--text-dark);
 }
 .message-box-wrapper {
   margin: 0 12px;
+  max-width: 80%;
 }
 .message-box-wrapper span {
   font-size: 10px;

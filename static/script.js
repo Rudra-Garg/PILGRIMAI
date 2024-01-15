@@ -1,3 +1,5 @@
+
+
 function setCookie(key, value, expirationDays) {
     const date = new Date();
     date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
@@ -30,6 +32,11 @@ function getCookie(key) {
 // Example usage
 //const storedString = getCookie('myKey');
 //console.log(storedString);
+
+
+
+
+
 
 
 function generateRandomString(length = 20) {
@@ -69,11 +76,18 @@ btn.addEventListener('click', function handleClick(event) {
 );
 function sendData() {
     var userInput = document.getElementById("input-text").value;
-    var userInput = userInput.trim();
+    userInput = userInput.trim();
     if (userInput == '') { return; }
     else {
         var chatMessages = document.getElementById("chat-messages");
-        chatMessages.innerHTML += '<div class="message-wrapper reverse"><img class="message-pp" src="/static/portfolio-1.png" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box">' + userInput + '&nbsp;&nbsp;&nbsp;</div><span>You</span></div></div>';
+        var userMessageWrapper = document.createElement('div');
+        userMessageWrapper.classList.add('message-wrapper', 'reverse');
+
+        userMessageWrapper.innerHTML = '<img class="message-pp" src="/static/portfolio-1.png" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box"></div><span>You</span></div>';
+
+        userMessageWrapper.querySelector('.message-box').textContent = userInput;
+
+        chatMessages.appendChild(userMessageWrapper);
         document.getElementById("input-text").value = '';
         chatMessages.scrollTop = chatMessages.scrollHeight;
         flag = false;
@@ -82,7 +96,7 @@ function sendData() {
             type: 'POST',
             data: { 'data': sessionID+userInput },
             success: function (response) {
-                chatMessages.innerHTML += '<div class="message-wrapper"><img class="message-pp" src="/static/favicon.ico" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box">' + response + '&nbsp;&nbsp;&nbsp;</div><span>Bot</span></div></div>';
+                chatMessages.innerHTML += '<div class="message-wrapper"><img class="message-pp" src="/static/favicon.ico" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box">' + marked.parse(response) + '&nbsp;&nbsp;&nbsp;</div><span>Bot</span></div></div>';
                 flag = true;
                 chatMessages.scrollTop = chatMessages.scrollHeight;
             },
