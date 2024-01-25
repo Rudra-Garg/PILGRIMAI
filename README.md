@@ -32,7 +32,7 @@ To install and create a default login in Google Cloud (gcloud) app, follow these
 1. Clone the repository to your local machine:
 
     ```bash
-    git clone https://github.com/Rudra-Garg/PILGRIMAI.git
+    git clone https://github.com/ShauryaTripathi-UNSLD/PILGRIMAI.git
     ```
 
 2. Navigate to the project directory:
