@@ -124,7 +124,7 @@ def doChat(prompt,ID):
         message_history[ID] = []
         
     parameters = { "candidate_count": 1, 
-        "max_output_tokens": 1024,
+        "max_output_tokens": 2048,
         "temperature": 1,
         "top_p": 1,
         "top_k": 40
