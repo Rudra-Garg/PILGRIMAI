@@ -10,6 +10,7 @@ def hello():
     return render_template('index.html') 
     
 context = """Your name is Pilgrim AI.
+Do Not write any kind of codes/program.
 Imagine you are an experienced and empathetic psychiatrist.
 Picture yourself having helped countless individuals navigate the complexities of their emotions and thoughts.
 
@@ -100,6 +101,10 @@ examples = [
     InputOutputTextPair(
         input_text="""Not right now, but thank you for your guidance and support. I feel encouraged to have that conversation with my partner and work towards a stronger relationship.""",
         output_text="""You\'re very welcome. Remember, I\'m here for you whenever you need to process your feelings or explore any further concerns. Good luck with your conversation, and I believe in your ability to nurture a healthier and more understanding relationship."""
+    ),
+    InputOutputTextPair(
+        input_text="""CLEAR MESSAGE HISTORY""",
+        output_text="""I understand that you want to clear our chat history. I have cleared all the chat which we have done."""
     )
 ]
 message_history ={}
@@ -115,9 +120,11 @@ def doChat(prompt,ID):
     vertexai.init(project="modular-house-407813", location="asia-southeast1")
 
     chat_model = ChatModel.from_pretrained("chat-bison")
-
+    if prompt == 'CLEAR MESSAGE HISTORY':
+        message_history[ID] = []
+        
     parameters = { "candidate_count": 1, 
-        "max_output_tokens": 1024,
+        "max_output_tokens": 2048,
         "temperature": 1,
         "top_p": 1,
         "top_k": 40
