@@ -68,6 +68,7 @@ function generateRandomString(length = 20) {
 
 const btn = document.getElementById('btn');
 let flag = true;
+let chatHasContent = false;
 
 btn.addEventListener('click', function handleClick(event) {
     event.preventDefault();
@@ -76,6 +77,7 @@ btn.addEventListener('click', function handleClick(event) {
 }
 );
 function sendData() {
+    chatHasContent = true;
     var userInput = document.getElementById("input-text").value;
     userInput = userInput.trim();
     if (userInput == '') { return; }
@@ -109,6 +111,48 @@ function sendData() {
     }
 
 
+}
+
+function clearHistory() {
+
+    if(flag==false){return;}
+    var userInput = "CLEAR CHAT HISTORY";
+    userInput = userInput.trim();
+    if (userInput == '') { return; }
+    else {
+        var chatMessages = document.getElementById("chat-messages");
+        var userMessageWrapper = document.createElement('div');
+        userMessageWrapper.classList.add('message-wrapper', 'reverse');
+
+        //userMessageWrapper.innerHTML = '<img class="message-pp" src="/static/portfolio-1.png" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box"></div><span>You</span></div>';
+        //userMessageWrapper.querySelector('.message-box').textContent = userInput;
+
+        chatMessages.appendChild(userMessageWrapper);
+        
+        if(chatHasContent==false){chatMessages.innerHTML += '<center><p class="text-1000 fs-1">Chat is already cleared, start by sending a message</p></center>';chatMessages.scrollTop = chatMessages.scrollHeight;return;}
+        document.getElementById("input-text").value = '';
+        document.getElementById("input-text").placeholder = 'Wait a few seconds for the chat to clear.';
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+        flag = false;
+        chatMessages.innerHTML = '';
+        $.ajax({
+            url: '/process',
+            type: 'POST',
+            data: { 'data': sessionID+userInput },
+            success: function (response) {
+                chatMessages.innerHTML += '<center><p class="text-1000 fs-1">Started a new chat.,You can chat now</p></center>';
+                document.getElementById("input-text").placeholder = 'Type your message here...';
+                flag = true;
+                chatMessages.scrollTop = chatMessages.scrollHeight;
+            },
+            error: function (error) {
+                console.log(error);
+            }
+        }
+        );
+    }
+
+    chatHasContent=false;
 }
 
 function handleKeyPress(event) {
