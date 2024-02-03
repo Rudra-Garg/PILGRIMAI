@@ -4,7 +4,8 @@ function setCookie(key, value, expirationDays) {
     const date = new Date();
     date.setTime(date.getTime() + (expirationDays * 24 * 60 * 60 * 1000));
     const expires = `expires=${date.toUTCString()}`;
-    document.cookie = `${key}=${value}; ${expires}; path=/`;
+    const sameSite = 'SameSite=Strict'; // Add SameSite attribute
+    document.cookie = `${key}=${value}; ${expires}; path=/; ${sameSite}`; // Include SameSite attribute in the cookie string
 }
 
 // Example usage
