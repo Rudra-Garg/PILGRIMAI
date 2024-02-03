@@ -116,7 +116,7 @@ function sendData() {
 function clearHistory() {
 
     if(flag==false){return;}
-    var userInput = "CLEAR CHAT HISTORY";
+    var userInput = "CLEAR MESSAGE HISTORY";
     userInput = userInput.trim();
     if (userInput == '') { return; }
     else {
