@@ -4416,7 +4416,7 @@ textarea.form-control.is-invalid {
     user-select: none;
     background-color: transparent;
     border: 1px solid transparent;
-    padding: .8rem 2.5rem;
+    padding: .8rem 0.8rem;
     font-size: 1rem;
     border-radius: .5rem;
     -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
@@ -4435,6 +4435,7 @@ textarea.form-control.is-invalid {
 }
 
 .btn:hover {
+    transform: scale(1.1);
     color: #717075;
     text-decoration: none
 }
@@ -4475,8 +4476,8 @@ fieldset:disabled .btn {
 .btn-primary {
     height: 70px;
     color: #fff;
-    background-color: #045bc1;
-    border-color: #045bc1;
+    background-color: #1c92dc;
+    border-color: #1c92dc;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075)
     

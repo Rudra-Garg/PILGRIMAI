@@ -39,6 +39,7 @@
   /* Existing styles remain unchanged */
   
   #user-input {
+    background: linear-gradient(120deg, #17bebb, #f0a6ca);
     padding: 20px;
     display: flex;
     border-top: 1px solid #ffffff;
@@ -62,7 +63,9 @@
   
   #send-button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #1c92dc;
+    font-weight: 700;
+    height: 70px;
     color: #fff;
     border: none;
     border-radius: 5px;
