@@ -96,7 +96,7 @@ function sendData() {
         chatMessages.scrollTop = chatMessages.scrollHeight;
         flag = false;
         $.ajax({
-            url: '/process',
+            url: '/chat',
             type: 'POST',
             data: { 'data': sessionID+userInput },
             success: function (response) {
