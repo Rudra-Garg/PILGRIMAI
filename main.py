@@ -5,6 +5,7 @@ from flask import Flask, render_template, request, jsonify
 from context import context
 from example import examples, message_history
 import random
+
 app = Flask(__name__, template_folder="templates")
 
 
@@ -48,11 +49,14 @@ def chat():
         result = doChat(prompt, sessionID).text
         return result
 
+
 @app.route('/SID', methods=['POST', 'GET'])
 def SID():
     characters = list("abcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     random.shuffle(characters)
     return jsonify(''.join(characters[:20]))
 
+
 if __name__ == '__main__':
     app.run(debug=True)
+
