@@ -80,7 +80,7 @@ function sendData() {
         var userMessageWrapper = document.createElement('div');
         userMessageWrapper.classList.add('message-wrapper', 'reverse');
 
-        userMessageWrapper.innerHTML = '<img class="message-pp" src="/static/portfolio-1.png" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box"></div><span>You</span></div>';
+        userMessageWrapper.innerHTML = '<img class="message-pp" src="/static/Images/portfolio-1.png" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box"></div><span>You</span></div>';
 
         userMessageWrapper.querySelector('.message-box').textContent = userInput;
 
@@ -98,7 +98,7 @@ function sendData() {
                 contentType: "application/json",
                 data: JSON.stringify(jsonData),
                 success: function (response) {
-                    chatMessages.innerHTML += '<div class="message-wrapper"><img class="message-pp" src="/static/favicon.ico" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box">' + marked.parse(response) + '&nbsp;&nbsp;&nbsp;</div><span>Bot</span></div></div>';
+                    chatMessages.innerHTML += '<div class="message-wrapper"><img class="message-pp" src="/static/Images/favicon.ico" alt="profile-pic"><div class="message-box-wrapper"><div class="message-box">' + marked.parse(response) + '&nbsp;&nbsp;&nbsp;</div><span>Bot</span></div></div>';
                     flag = true;
                     chatMessages.scrollTop = chatMessages.scrollHeight;
                 },
