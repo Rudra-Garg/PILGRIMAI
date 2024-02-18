@@ -1,8 +1,8 @@
 #chat-container {
-    max-width: 60%;
+    max-width: 100%;
     margin: 50px auto;
     border: 2px solid #00f7ff;
-    background: linear-gradient(120deg, #f0a6ca, #17bebb);
+    background: hwb(0 91% 0%);
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -13,6 +13,7 @@
     height: 600px;
     overflow-y: scroll;
     padding: 20px;
+    padding-bottom: 50px;
   }
   
   .message {
@@ -38,6 +39,7 @@
   /* Existing styles remain unchanged */
   
   #user-input {
+    background: linear-gradient(120deg, #17bebb, #f0a6ca);
     padding: 20px;
     display: flex;
     border-top: 1px solid #ffffff;
@@ -61,7 +63,9 @@
   
   #send-button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #1c92dc;
+    font-weight: 700;
+    height: 70px;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -553,10 +557,11 @@ body[data-theme=indigo], body[data-theme=pink] {
   display: flex;
   align-items: flex-start;
   padding-bottom: 20px;
+  max-width: 100%;
 }
 .message-wrapper.reverse {
   justify-content: flex-end;
-}
+  }
 .message-wrapper.reverse .message-box {
   background-color: var(--message-box-2);
   color: #fff;
@@ -587,11 +592,12 @@ body[data-theme=indigo], body[data-theme=pink] {
   font-size: 16px;
   line-height: 16px;
   width: auto;
-  max-width: 80%;
+  max-width: 100%;
   color: var(--text-dark);
 }
 .message-box-wrapper {
   margin: 0 12px;
+  max-width: 80%;
 }
 .message-box-wrapper span {
   font-size: 10px;
