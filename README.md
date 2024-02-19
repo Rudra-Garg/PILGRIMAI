@@ -20,3 +20,41 @@ To get started with Pilgrim, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Navigate to the `app` folder to work with the mobile application code, or navigate to the `website` folder to work with the website code.
+
+## How to Run the Flutter App:
+
+To run the Pilgrim mobile application, follow these steps:
+
+1. Ensure you have Flutter installed on your system. If not, you can follow the instructions on the [Flutter website](https://flutter.dev/docs/get-started/install) to install it.
+
+2. Navigate to the `app` folder in your terminal or command prompt.
+
+3. Run the following command to ensure all dependencies are installed:
+  ```
+    flutter pub get
+  ```
+
+4. Once the dependencies are installed, you can launch the app on an emulator or a connected device by running:
+  ```
+    flutter run
+  ```
+
+
+This command will build and launch the Pilgrim mobile application on your emulator or device.
+
+5. Alternatively, you can build the app for specific platforms (e.g., Android or iOS) using the following commands:
+
+- For Android:
+
+  ```
+  flutter build apk
+  ```
+
+- For iOS:
+
+  ```
+  flutter build ios
+  ```
+
+After building, you can install the app on your device manually or using the appropriate deployment method for each platform.
+
