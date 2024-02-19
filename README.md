@@ -58,3 +58,43 @@ This command will build and launch the Pilgrim mobile application on your emulat
 
 After building, you can install the app on your device manually or using the appropriate deployment method for each platform.
 
+## How to Run the Flask Website:
+
+You can access the wibsite here: [Pilgrimai.live](https://pilgrimai.live)
+
+To run the Pilgrim website, follow these steps:
+
+1. Ensure you have Python and Flask installed on your system. If not, you can install Flask and other required dependencies using pip:
+  ```
+  pip install -r requirements.txt
+  ```
+This command will install all the required dependencies listed in the `requirements.txt` file.
+
+2. Navigate to the `website` folder in your terminal or command prompt.
+
+3. Run the following command to start the Flask development server:
+
+   ```
+   flask run
+   ```
+
+   This command will start the Flask server, and you can access the website by visiting `http://localhost:5000` in your web browser.
+
+4. Alternatively, you can deploy the Flask website to a production server following the deployment instructions provided in the Flask documentation.
+
+## Adding Application Defaults for Google Cloud Platform (Vertex AI):
+
+If you plan to run the Pilgrim website locally, you'll need to set up application-default credentials. Follow these steps to add application-default credentials:
+
+1. Install the Google Cloud SDK if you haven't already. You can download it from the [Google Cloud SDK Documentation](https://cloud.google.com/sdk/docs/install).
+
+2. Authenticate the Google Cloud SDK by running the following command and following the authentication prompts:
+
+   ```
+   gcloud auth application-default login
+   ```
+
+3. After successful authentication, application-default credentials will be added to your environment, and you'll be able to make calls to Vertex AI services from the Pilgrim website.
+
+
+
