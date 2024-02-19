@@ -8,11 +8,11 @@ Pilgrim is an AI-powered chatbot designed to provide accessible and stigma-free 
 
 ## App
 
-The `app` folder contains the code for the Pilgrim mobile application. Built with Flutter, the Pilgrim app provides users with a convenient way to access Pilgrim on their mobile devices.
+The `App` folder contains the code for the Pilgrim mobile application. Built with Flutter, the Pilgrim app provides users with a convenient way to access Pilgrim on their mobile devices.
 
 ## Website
 
-The `website` folder contains the code for the Pilgrim website. The website is built using a Flask backend and hosted on Google App Engine. It offers users another platform to access the Pilgrim and seek support.
+The `Website` folder contains the code for the Pilgrim website. The website is built using a Flask backend and hosted on Google App Engine. It offers users another platform to access the Pilgrim and seek support.
 
 ## Getting Started
 
