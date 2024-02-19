@@ -1,0 +1,44 @@
+name: Pilgrim
+description: A new Flutter project.
+version: 1.0.0+1
+environment:
+  sdk: '>=2.12.0 <3.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.6.6
+  connectivity_plus: ^5.0.2
+  shared_preferences: ^2.2.2
+  cached_network_image: ^3.3.0
+  flutter_svg: ^2.0.9
+  intl: ^0.19.0
+  flutter_markdown: ^0.6.0
+  url_launcher: ^6.0.9
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/images/
+    - assets/ic_launcher.png
+  fonts:
+    - family: Rubik
+      fonts:
+        - asset: assets/fonts/RubikRomanRegular.ttf
+          weight: 400
+        - asset: assets/fonts/RubikRomanLight.ttf
+          weight: 300
+    - family: Baloo Paaji 2
+      fonts:
+        - asset: assets/fonts/BalooPaaji2Regular.ttf
+          weight: 400
+    - family: Open Sans
+      fonts:
+        - asset: assets/fonts/OpenSansRomanRegular.ttf
+          weight: 400
+    - family: Aleo
+      fonts:
+        - asset: assets/fonts/AleoRegular.ttf
+          weight: 400
