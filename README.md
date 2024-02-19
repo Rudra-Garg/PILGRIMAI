@@ -19,7 +19,7 @@ The `Website` folder contains the code for the Pilgrim website. The website is b
 To get started with Pilgrim, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Navigate to the `app` folder to work with the mobile application code, or navigate to the `website` folder to work with the website code.
+2. Navigate to the `App` folder to work with the mobile application code, or navigate to the `Website` folder to work with the website code.
 
 ## How to Run the Flutter App:
 
@@ -27,7 +27,7 @@ To run the Pilgrim mobile application, follow these steps:
 
 1. Ensure you have Flutter installed on your system. If not, you can follow the instructions on the [Flutter website](https://flutter.dev/docs/get-started/install) to install it.
 
-2. Navigate to the `app` folder in your terminal or command prompt.
+2. Navigate to the `App` folder in your terminal or command prompt.
 
 3. Run the following command to ensure all dependencies are installed:
   ```
@@ -70,7 +70,7 @@ To run the Pilgrim website, follow these steps:
   ```
 This command will install all the required dependencies listed in the `requirements.txt` file.
 
-2. Navigate to the `website` folder in your terminal or command prompt.
+2. Navigate to the `Website` folder in your terminal or command prompt.
 
 3. Run the following command to start the Flask development server:
 
