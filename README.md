@@ -1,4 +1,4 @@
-[Click here](https://pilgrimai.vercel.app) to watch it in action.
+[Click here](https://pilgrimai.vercel.app) to watch it in action.with ollama
 
 # Pilgrim
 
