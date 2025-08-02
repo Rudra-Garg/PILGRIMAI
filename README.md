@@ -20,6 +20,13 @@ Pilgrim is an AI-powered chatbot designed to provide accessible and stigma-free 
   <img src="media/website-demo.gif" width="600" alt="website demo gif">
 </p>
 
+#### Watch a in-depth video
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=KlggvOtgwVk" target="_blank">
+    <img src="https://img.youtube.com/vi/KlggvOtgwVk/0.jpg" alt="Watch the video" />
+  </a>
+</p>
+
 -----
 
 ## App
