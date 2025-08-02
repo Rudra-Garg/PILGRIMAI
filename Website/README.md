@@ -7,7 +7,7 @@ This repository contains the source code for the Pilgrim AI website, a Flask-bas
 ## Showcase
 
 <p align="center">
-  <img src="../media/website-demo.gif" width="600" alt="website demo gif">
+  <img src="../media/website-demo.gif" width="1000" alt="website demo gif">
 </p>
 
 -----
