@@ -89,7 +89,7 @@ To run the Pilgrim mobile application, follow these steps:
 
 ## How to Run the Flask Website
 
-You can access the website here: [Pilgrimai.live](https://pilgrimai.live)
+[//]: # (You can access the website here: [Pilgrimai.live]&#40;https://pilgrimai.live&#41;)
 
 To run the Pilgrim website locally, follow these steps:
 
